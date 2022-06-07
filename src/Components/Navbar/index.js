@@ -37,7 +37,13 @@ function NavBar() {
         > Home
         </Link>
         {/* <Link to="/"><a href="#skills2"> Skills </a></Link> */}
-        <a href="#skills"> Skills </a>
+        <a
+          href="#skills"
+          onClick={() => {
+            console.log('click');
+          }}
+        > Skills
+        </a>
         {/* <Link to="/projets"> Projets </Link> */}
         <a href="#projets"> Projets </a>
         {/* <Link to="/experience"> Experience </Link> */}

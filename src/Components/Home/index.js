@@ -171,9 +171,48 @@ function Home() {
       </div>
       <div className="contact" id="contact">
         <h1 className="contactTitle"> Contact</h1>
-        <form className="contactForm">
-          formulaire de contact
-        </form>
+        <section className="contact-box">
+          <div className="contact-links">
+            <h2>CONTACT</h2>
+            <div className="links">
+              <div className="link">
+                <a><LinkedInIcon /></a>
+              </div>
+              <div className="link">
+                <div><GitHubIcon /></div>
+              </div>
+              <div className="link">
+                <a><LocalPhoneIcon /></a>
+              </div>
+              <div className="link">
+                <a><EmailIcon /></a>
+              </div>
+            </div>
+          </div>
+          <div className="contact-form-wrapper">
+            <form action="">
+              <div className="form-item">
+                <input type="text" className="form-input" placeholder="Nom:" />
+              </div>
+              <div className="form-item">
+                <input type="text" className="form-input" placeholder="Email:" />
+              </div>
+              <div className="form-item">
+
+                <textarea
+                  className="form-textarea"
+                  placeholder="Message:"
+                />
+              </div>
+              <button
+                className="submit-btn"
+                type="submit"
+              >
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </section>
       </div>
     </div>
   );
