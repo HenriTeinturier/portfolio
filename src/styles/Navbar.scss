@@ -8,6 +8,7 @@
   background: vars.$mainBackground;
   // to close navMenu animation
   transition: all 0.4s;
+  z-index: 1;
 }
 
 .links {

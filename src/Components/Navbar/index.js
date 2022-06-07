@@ -29,12 +29,19 @@ function NavBar() {
         </button>
       </div>
       <div className="links">
-        <Link to="/"> Home </Link>
-        <Link to="/"> Skills </Link>
-        <Link to="/projets"> Contact </Link>
-        <Link to="/projets"> Projets </Link>
-        <Link to="/projets">Testimonial </Link>
-        <Link to="/experience"> Experience </Link>
+        <Link
+          to="/"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        > Home
+        </Link>
+        {/* <Link to="/"><a href="#skills2"> Skills </a></Link> */}
+        <a href="#skills"> Skills </a>
+        {/* <Link to="/projets"> Projets </Link> */}
+        <a href="#projets"> Projets </a>
+        {/* <Link to="/experience"> Experience </Link> */}
+        <a href="#experience"> Experience </a>
       </div>
     </nav>
   );
