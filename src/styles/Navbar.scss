@@ -9,6 +9,7 @@
   // to close navMenu animation
   transition: all 0.4s;
   z-index: 1;
+
 }
 
 .links {
@@ -18,12 +19,15 @@
   align-items: center;
   justify-content: center;
   color: vars.$mainColor;
+  transition: all 0.4s;
 }
 
 .navbar a {
   margin: 20px;
   font-size: 25px;
   color: vars.$mainColor;
+
+
 }
 
 .toggleButton {
@@ -32,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 .toggleButton button {
@@ -40,6 +45,7 @@
   border: none;
   color: vars.$mainColor;
   cursor: pointer;
+
 }
 
 .toggleButton svg {
@@ -47,15 +53,23 @@
 }
 
 #open {
-  height: 100vh;
+  // height: 100vh;
   // to open navMenu animation
+  // position: sticky;
+  background-color: vars.$mainBackgroundSecondary;
   transition: all 0.4s;
+  // height: 370px;
 }
 
 #open .links {
+  transition: all 0.4s;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 100px;
+  position: sticky;
+  padding-top: 32px;
+  background-color: vars.$mainBackgroundSecondary;
+  // background-color: vars.$mainBackgroundSecondary;
+  height: 330px;
 }
 
 #open a {
