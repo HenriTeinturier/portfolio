@@ -1,6 +1,8 @@
-import ProjectItem from '../ProjectItem';
+// not yet utilised for this time. Transfert in homepage for the moment.
+
+import ProjectItem from '../../ProjectItem';
 import '../../styles/Projects.scss';
-import { ProjectList } from '../../data/ProjectList';
+import { ProjectList } from '../../../data/ProjectList';
 
 function Projects() {
   return (

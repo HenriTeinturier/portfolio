@@ -7,20 +7,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: vars.$mainColorBis;
+  background-color: vars.$mainColorClear;
   padding: 160px 0 60px;
   z-index: 0;
 }
 
 .experience h1 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainBackgroundSecondary;
+  color: vars.$mainColorBis;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 2.5rem;
 }
 
-
-.vertical-timeline {
+.vertical-timeline-el .vertical-timeline {
   z-index: 0;
 }
+
+// .vertical-timeline-element-icon {
+//   background: red;
+// }

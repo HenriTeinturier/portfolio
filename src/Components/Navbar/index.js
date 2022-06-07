@@ -42,6 +42,7 @@ function NavBar() {
         <a href="#projets"> Projets </a>
         {/* <Link to="/experience"> Experience </Link> */}
         <a href="#experience"> Experience </a>
+        <a href="#contact"> Contact </a>
       </div>
     </nav>
   );

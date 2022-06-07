@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../Home';
-import Experience from '../Experience';
-import Projects from '../Projects';
+// import Experience from '../Experience';
+// import Projects from '../Projects';
 import Error from '../Error';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
@@ -15,9 +15,9 @@ function Portfolio() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projets" element={<Projects />} />
+        {/* <Route path="/projets" element={<Projects />} /> */}
         <Route path="/projet/:id" element={<ProjectDisplay />} />
-        <Route path="/experience" element={<Experience />} />
+        {/* <Route path="/experience" element={<Experience />} /> */}
         <Route
           path="*"
           element={(

@@ -15,15 +15,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: vars.$mainBackground;
-  color: vars.$mainColorBis;
+  background-color: vars.$mainColor;
+  color: vars.$mainColorGrey;
 }
 
 .about h2 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(20px + 5vmin);
   padding: 8px;
-  color: vars.$mainColorSecondary;
+  color: vars.$mainColorSpecial;
   // height: 120px;
   margin-bottom: 3rem;
   font-weight: bold;
@@ -41,7 +41,7 @@
 .prompt svg {
   font-size: 60px;
   margin: 5px;
-  color: vars.$mainColor;
+  color: vars.$mainColorClear;
 }
 
 .skills {
@@ -55,12 +55,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: vars.$mainColorClear;
   // border-bottom: 2px solid vars.$mainBackground;
 }
 
 .skills h1 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainBackgroundSecondary;
+  color: vars.$mainColorBis;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 2.5rem;
@@ -68,22 +69,20 @@
 
 .skills h2 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainBackgroundSecondary;
+  color: vars.$mainColorBis;
   font-weight: 600;
   margin-bottom: 1rem;
-}
-
-
-
-.skills .item {
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainBackgroundSecondary;
-  margin-bottom: 2rem;
 }
 
 .skills .list {
   list-style: none;
   width: 80%;
+}
+
+.skills .item {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$mainColorBis;
+  margin-bottom: 2rem;
 }
 
 .list span {
