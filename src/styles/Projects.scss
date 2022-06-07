@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: vars.$mainColorter;
+  padding: 60px 0 60px;
 }
 
 .projects .projectTitle {
@@ -37,6 +39,7 @@
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  background-color: vars.$mainColorBis;
 }
 
 .projectItem:hover {
@@ -58,6 +61,7 @@
 
 .projectItem h1 {
   font-size: 25px;
+  color: vars.$mainBackgroundSecondary;
 }
 
 @media only screen and (max-width: 1300px) {
