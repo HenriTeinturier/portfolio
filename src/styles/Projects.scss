@@ -1,19 +1,25 @@
 @use 'vars';
 
 .projects {
+  // font-family: "Arial", sans-serif;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: vars.$mainColorter;
+  padding: 160px 0 60px;
 }
 
+
 .projects .projectTitle {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   color: vars.$mainBackgroundSecondary;
-  font-size: 60px;
-  font-weight: bolder;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
 }
 
 .projectList {
@@ -37,6 +43,7 @@
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  background-color: vars.$mainColorBis;
 }
 
 .projectItem:hover {
@@ -58,6 +65,7 @@
 
 .projectItem h1 {
   font-size: 25px;
+  color: vars.$mainBackgroundSecondary;
 }
 
 @media only screen and (max-width: 1300px) {

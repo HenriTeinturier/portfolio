@@ -1,0 +1,26 @@
+@use 'vars';
+
+.experience {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: vars.$mainColorBis;
+  padding: 160px 0 60px;
+  z-index: 0;
+}
+
+.experience h1 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$mainBackgroundSecondary;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+
+.vertical-timeline {
+  z-index: 0;
+}

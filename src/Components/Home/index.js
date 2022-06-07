@@ -1,14 +1,23 @@
+// import icons from MaterialUI
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
+
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import '../../styles/Home.scss';
+import '../../styles/Experience.scss';
+import '../../styles/Projects.scss';
+import 'react-vertical-timeline-component/style.min.css';
 
 import ProjectItem from '../ProjectItem';
-import '../../styles/Projects.scss';
 import { ProjectList } from '../../data/ProjectList';
 
 function Home() {
+  const backgroundColor = '#3e497a';
+  const backgroundColorWork = '#e9d35b';
   return (
     <div className="home">
       <div className="about">
@@ -24,7 +33,7 @@ function Home() {
           <LocalPhoneIcon />
         </div>
       </div>
-      <div className="skills">
+      <div className="skills" id="skills">
         <h1> Skills</h1>
         <ol className="list">
           <li className="item">
@@ -46,7 +55,7 @@ function Home() {
           </li>
         </ol>
       </div>
-      <div className="projects">
+      <div className="projects" id="projets">
         <h1 className="projectTitle"> My Personnal Projects</h1>
         <div className="projectList">
           {ProjectList.map((project, idx) => (
@@ -58,6 +67,104 @@ function Home() {
             />
           ))}
         </div>
+      </div>
+      <div className="experience" id="experience">
+        <h1> Experience</h1>
+        <VerticalTimeline
+          lineColor={backgroundColor}
+        >
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2010 - 2014"
+            iconStyle={{ background: backgroundColor, color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2010 - 2014"
+            iconStyle={{ background: backgroundColor, color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2020 - present"
+            iconStyle={{ background: backgroundColorWork, color: '#fff' }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2020 - present"
+            iconStyle={{ background: backgroundColorWork, color: '#fff' }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2010 - 2014"
+            iconStyle={{ background: backgroundColor, color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2010 - 2014"
+            iconStyle={{ background: backgroundColor, color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2010 - 2014"
+            iconStyle={{ background: backgroundColor, color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p className="vertical-timeline-element-subtitle">
+              Master STAPS
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
       </div>
     </div>
   );
