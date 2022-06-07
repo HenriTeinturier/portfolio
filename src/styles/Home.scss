@@ -1,0 +1,115 @@
+@use 'vars';
+
+.home {
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: vars.$mainColorBis;
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: vars.$mainBackground;
+  color: vars.$mainColorBis;
+}
+
+.about h2 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: calc(20px + 5vmin);
+  padding: 8px;
+  color: vars.$mainColorSecondary;
+  // height: 120px;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.about .prompt {
+  width: 80%;
+  font-size: 30px;
+}
+
+.about p {
+  margin-bottom: 2rem;
+}
+
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: vars.$mainColor;
+}
+
+.skills {
+  // font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  // font-weight: bold;
+  height: calc(100vh - 100px);
+  padding: 0;
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h1 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$mainBackgroundSecondary;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+.skills h2 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$mainBackgroundSecondary;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+
+.skills .item {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$mainBackgroundSecondary;
+  margin-bottom: 2rem;
+}
+
+.skills .list {
+  list-style: none;
+  width: 80%;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  // .about h2 {
+  //   font-size: 40px;
+  // }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  // .skills {
+  //   text-align: center;
+  // }
+
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}

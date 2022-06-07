@@ -1,0 +1,17 @@
+@use 'reset';
+@use 'vars';
+
+.Portfolio {
+  position: relative;
+  width: 100%;
+  // height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: vars.$mainColorBis;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
