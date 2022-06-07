@@ -10,17 +10,20 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import '../../styles/Home.scss';
 import '../../styles/Experience.scss';
 import '../../styles/Projects.scss';
+import '../../styles/Contact.scss';
 import 'react-vertical-timeline-component/style.min.css';
 
 import ProjectItem from '../ProjectItem';
 import { ProjectList } from '../../data/ProjectList';
 
 function Home() {
-  const backgroundColor = '#3e497a';
-  const backgroundColorWork = '#e9d35b';
+  const backgroundColor = '#426691';
+  const backgroundColorWork = '#ffa500';
   return (
     <div className="home">
-      <div className="about">
+      <div
+        className="about"
+      >
         <h2> Bonjour, je m'appelle Henri</h2>
         <div className="prompt">
           <p>
@@ -165,6 +168,12 @@ function Home() {
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
+      </div>
+      <div className="contact" id="contact">
+        <h1 className="contactTitle"> Contact</h1>
+        <form className="contactForm">
+          formulaire de contact
+        </form>
       </div>
     </div>
   );

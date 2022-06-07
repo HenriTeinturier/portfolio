@@ -1,3 +1,5 @@
+// Not yet utilised for the moment. Transfert in home Comonent
+
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 // import du css fournit avec vertical-timeline
 import SchoolIcon from '@mui/icons-material/School';

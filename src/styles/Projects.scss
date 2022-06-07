@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: vars.$mainColorter;
+  background-color: vars.$mainColor;
   padding: 160px 0 60px;
 }
 
@@ -16,7 +16,7 @@
 .projects .projectTitle {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  color: vars.$mainBackgroundSecondary;
+  color: vars.$mainColorSpecial;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 2.5rem;
@@ -43,7 +43,7 @@
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: vars.$mainColorBis;
+  background-color: vars.$mainColorClear;
 }
 
 .projectItem:hover {
@@ -60,12 +60,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 }
 
 .projectItem h1 {
+
   font-size: 25px;
-  color: vars.$mainBackgroundSecondary;
+  color: vars.$mainColorBis;
 }
 
 @media only screen and (max-width: 1300px) {
