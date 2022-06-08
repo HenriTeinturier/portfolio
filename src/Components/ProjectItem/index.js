@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function ProjectItem({ image, name, idx }) {
   const navigate = useNavigate();
@@ -19,5 +20,11 @@ function ProjectItem({ image, name, idx }) {
     </div>
   );
 }
+
+ProjectItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  idx: PropTypes.number.isRequired,
+};
 
 export default ProjectItem;

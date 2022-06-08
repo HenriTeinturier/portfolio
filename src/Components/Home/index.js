@@ -7,9 +7,11 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import ContactForm from '../Contact';
 import '../../styles/Home.scss';
 import '../../styles/Experience.scss';
 import '../../styles/Projects.scss';
+import '../../styles/ContactV1.scss';
 import '../../styles/Contact.scss';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -169,11 +171,12 @@ function Home() {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-      <div className="contact" id="contact">
-        <h1 className="contactTitle"> Contact</h1>
-        <section className="contact-box">
-          <div className="contact-links">
-            <h2>CONTACT</h2>
+      <ContactForm id="contact" />
+      {/* <div className="contactV1">
+        <h1 className="contactV1Title"> ContactV1</h1>
+        <section className="contactV1-box">
+          <div className="contactV1-links">
+            <h2>CONTACTV1</h2>
             <div className="links">
               <div className="link">
                 <a><LinkedInIcon /></a>
@@ -189,7 +192,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="contact-form-wrapper">
+          <div className="contactV1-form-wrapper">
             <form action="">
               <div className="form-item">
                 <input type="text" className="form-input" placeholder="Nom:" />
@@ -213,7 +216,7 @@ function Home() {
             </form>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   );
 }

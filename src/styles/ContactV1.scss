@@ -1,0 +1,161 @@
+@use 'vars';
+
+.contactV1 {
+  padding: 160px 0 60px;
+  width: 100%;
+  height: auto;
+  background-color: vars.$mainColorQuatro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactV1Title {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$mainColor;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+// conteneur left and right contactV1
+.contactV1-box {
+  width: clamp(100px, 90%, 1100px);
+  margin: 80px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// each conteneur take width 50%
+.contactV1-links,
+.contactV1-form-wrapper {
+  width: 50%;
+  padding: 8% 5% 10% 5%;
+}
+
+// left conteneur with background Special
+.contactV1-links {
+  background-color: vars.$mainColor;
+  background:
+    radial-gradient(circle at 55% 92%, vars.$mainColorTres 0 12%, transparent 12.2%),
+    radial-gradient(circle at 94% 72%, vars.$mainColorTres 0 10%, transparent 10.2%),
+    radial-gradient(circle at 20% max(78%, 350px), vars.$mainColorBis 0 7%, transparent 7.2%),
+    radial-gradient(circle at 0% 0%, vars.$mainColorBis 0 40%, transparent 40.2%),
+    vars.$mainColor;
+  border-radius: 10px 0 0 10px;
+}
+
+// right conteneur
+.contactV1-form-wrapper {
+  background-color: vars.$mainColorCinco;
+  border-radius: 0 10px 10px 0;
+}
+
+// with 100% for contenair left and right
+@media only screen and (max-width: 800px) {
+
+  .contactV1-links,
+  .contactV1-form-wrapper {
+    width: 100%;
+  }
+
+  .contactV1-links {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contactV1-form-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contactV1-box {
+    width: 95%;
+    margin: 8% 5%;
+  }
+}
+
+// left contener content
+.contactV1-links h2 {
+  color: vars.$mainColorClear;
+  font-size: clamp(30px, 6vw, 60px);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.link {
+  margin: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: vars.$mainColorSpecial;
+
+}
+
+.link svg {
+
+  font-size: 45px;
+  transition: 0.2s;
+  filter:
+    drop-shadow(2px 4px 4px #0006);
+}
+
+.link svg:hover {
+  transition: 0.2s;
+  transform: scale(1.15, 1.15);
+}
+
+.link svg:active {
+  transition: 0.2s;
+  transform: scale(1.15, 1.15);
+  filter:
+    drop-shadow(2px 4px 4px #222) sepia(0.3);
+}
+
+// right contener content
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid vars.$mainColorGrey;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  outline: 0;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+.form-textarea {
+  height: 200px;
+}
+
+.submit-btn {
+  background-color: vars.$mainColorTres;
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: vars.$mainColorClear;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 20px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.15, 1.15);
+}
+
+.submit-btn:active {
+  transform: scale(1.15, 1.15);
+  filter: sepia(0.5);
+}
