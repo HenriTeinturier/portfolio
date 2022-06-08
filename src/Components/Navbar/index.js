@@ -49,6 +49,14 @@ function NavBar() {
         {/* <Link to="/experience"> Experience </Link> */}
         <a href="#experience"> Experience </a>
         <a href="#contact"> Contact </a>
+        {/* <Link
+          to="/contact"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        > Contact
+        </Link> */}
+        {/* <a href="#contact"> Contact </a> */}
       </div>
     </nav>
   );
