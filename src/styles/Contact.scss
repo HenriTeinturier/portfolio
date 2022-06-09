@@ -9,8 +9,17 @@
 }
 
 /* 2/3 avec tailwin but max 522px for hight resolution */
-.contact__left {
+#contact__left {
   max-height: 600px;
+  background-color: vars.$mainColorCinco;
+}
+
+#contact__left--contacter {
+  color: vars.$mainColorPrincipalEx;
+}
+
+#contact__left--h1 {
+  color: vars.$mainColorBis;
 }
 
 @media (max-width: 1023px) {

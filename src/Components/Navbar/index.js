@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../../styles/Navbar.scss';
 import ReorderIcon from '@material-ui/icons/Reorder';
 
@@ -36,27 +37,23 @@ function NavBar() {
           }}
         > Home
         </Link>
-        {/* <Link to="/"><a href="#skills2"> Skills </a></Link> */}
-        <a
-          href="#skills"
-          onClick={() => {
-            console.log('click');
-          }}
+        <Link
+          to="/#skills"
         > Skills
-        </a>
-        {/* <Link to="/projets"> Projets </Link> */}
-        <a href="#projets"> Projets </a>
+        </Link>
+        <Link
+          to="/#projets"
+        > Projets
+        </Link>
         {/* <Link to="/experience"> Experience </Link> */}
-        <a href="#experience"> Experience </a>
-        <a href="#contact"> Contact </a>
-        {/* <Link
-          to="/contact"
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
+        <Link
+          to="/#experience"
+        > Experience
+        </Link>
+        <Link
+          to="/#contact"
         > Contact
-        </Link> */}
-        {/* <a href="#contact"> Contact </a> */}
+        </Link>
       </div>
     </nav>
   );
