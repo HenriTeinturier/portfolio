@@ -6,9 +6,20 @@ import ReorderIcon from '@material-ui/icons/Reorder';
 
 function NavBar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
+  const [isNavbarTransparent, setIsNavbarTransparent] = useState(true);
   // permet de connaître la location(url) actuelle.
   const location = useLocation();
 
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset < 200) {
+      setIsNavbarTransparent(true);
+    }
+    else {
+      setIsNavbarTransparent(false);
+    }
+  });
+
+  // TODO plus necessaire car tout est sur la page home?
   // Action mise en place à chaque changement d'URL.(clic sur un bouton du menu burger)
   useEffect(() => {
     setExpandNavbar(false);
@@ -16,7 +27,7 @@ function NavBar() {
 
   return (
     <nav
-      className="navbar"
+      className={isNavbarTransparent ? 'navbar' : 'navbar opacity1'}
       id={expandNavbar ? 'open' : 'close'}
     >
       <div className="toggleButton">
