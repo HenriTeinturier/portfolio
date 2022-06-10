@@ -6,6 +6,12 @@
   width: 100%;
   height: 100px;
   background: vars.$mainColor;
+  background: transparent;
+
+  //TODO les 2 lignes a mettre quand scrolly = ?
+  // background: vars.$mikeBackgroundGrey;
+  // box-shadow: 0 3px 20px rgba(black, 0.2);
+
   // to close navMenu animation
   z-index: 1;
   // vitesse de retour à 0 couleur navbar
@@ -21,12 +27,17 @@
   justify-content: center;
   // fermeture des links
   transition: all 0.4s;
+
+  //TODO là conserver quand transparent?
+  padding-top: 0;
 }
 
 .navbar a {
   margin: 20px;
   font-size: 25px;
   color: vars.$mainColorClear;
+  //TODO la ligne suivante a mettre quand scrolly = ?
+  // color: vars.$mikeColorSecondary;
 }
 
 .navbar a:hover {
@@ -46,6 +57,8 @@
   background-color: transparent;
   border: none;
   color: vars.$mainColorClear;
+  color: vars.$mainColorSpecial;
+  color: vars.$mikeColorSecondary;
   cursor: pointer;
 }
 
@@ -58,21 +71,26 @@
   // to open navMenu animation
   // position: sticky;
   background-color: vars.$mainColorBis;
+  background-color: vars.$mikeBackgroundGrey;
   // vitesse change color navbar
   transition: all 0.4s;
   // height: 370px;
 }
 
 #open .links {
-  flex-direction: column;
-  justify-content: flex-start;
+  // flex-direction: column;
+  // justify-content: flex-start;
   position: sticky;
   // padding-top: 8px;
   background-color: vars.$mainColorBis;
+  background-color: vars.$mikeBackgroundGrey;
+
+
   // background-color: vars.$mainBackgroundSecondary;
-  height: 330px;
+  height: 200px;
   // vitesse ouverture links
   transition: all 0.4s;
+  padding-top: 0;
 }
 
 // #open .links a {
@@ -88,8 +106,13 @@
 // }
 
 #open a {
+  display: block;
   width: 100%;
   text-align: center;
+  color: vars.$mainColorSpecial;
+  color: vars.$mikeColorSecondary;
+  margin: 0;
+
 
 }
 
@@ -101,6 +124,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .navbar {
+    background: transparent;
+  }
+
   .toggleButton {
     display: flex;
   }
@@ -108,6 +135,7 @@
   #close a {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 600px) {

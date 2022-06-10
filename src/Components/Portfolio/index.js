@@ -12,23 +12,26 @@ import '../../styles/Portfolio.scss';
 
 function Portfolio() {
   return (
-    <div className="Portfolio">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/projets" element={<Projects />} /> */}
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projet/:id" element={<ProjectDisplay />} />
-        {/* <Route path="/experience" element={<Experience />} /> */}
-        <Route
-          path="*"
-          element={(
-            <Error />
-            )}
-        />
-      </Routes>
-      <Footer />
-    </div>
+    <>
+      <div className="backgroundFixed" />
+      <div className="Portfolio">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/projets" element={<Projects />} /> */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projet/:id" element={<ProjectDisplay />} />
+          {/* <Route path="/experience" element={<Experience />} /> */}
+          <Route
+            path="*"
+            element={(
+              <Error />
+              )}
+          />
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 }
 

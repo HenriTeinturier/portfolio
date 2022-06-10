@@ -1,5 +1,9 @@
 @use 'vars';
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 .home {
   width: 100%;
@@ -10,6 +14,7 @@
 
 .about {
   width: 100%;
+  // max-width: 1200px;
   height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
@@ -17,31 +22,49 @@
   align-items: center;
   text-align: center;
   background-color: vars.$mainColor;
-  color: vars.$mainColorGrey;
+  background-color: transparent;
+
 }
 
 .about h2 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(20px + 5vmin);
   padding: 8px;
-  color: vars.$mainColorSpecial;
+  color: vars.$mikeBackgroundGrey;
   // height: 120px;
   margin-bottom: 3rem;
   font-weight: bold;
 }
 
+.about h2 span {
+  color: vars.$mainColorSpecial;
+
+}
+
 .about .prompt {
   width: 80%;
-  font-size: 30px;
+  margin: 0 auto;
+
 }
 
 .about p {
   margin-bottom: 2rem;
+  color: vars.$mikeBackgroundGrey;
+  font-size: 35px;
+}
+
+.about p span {
+  color: vars.$mainColorSpecial;
+  font-size: 40px;
 }
 
 .prompt svg {
   font-size: 60px;
   margin: 5px;
+  color: vars.$mikeBackgroundGrey;
+}
+
+.prompt svg:hover {
   color: vars.$mainColorSpecial;
 }
 
@@ -56,13 +79,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: vars.$mainColorClear;
+  background-color: vars.$mikeBackgroundGrey;
   // border-bottom: 2px solid vars.$mainBackground;
 }
 
 .skills h1 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainColorBis;
+  color: vars.$mainColorSpecial;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 2.5rem;
@@ -70,7 +93,7 @@
 
 .skills h2 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainColorBis;
+  color: vars.$mikeDarkGrey;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -82,7 +105,7 @@
 
 .skills .item {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainColorBis;
+  color: vars.$mikeMediumGrey;
   margin-bottom: 2rem;
 }
 

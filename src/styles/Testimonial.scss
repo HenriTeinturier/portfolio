@@ -1,0 +1,19 @@
+@use 'vars';
+
+.testimonial {
+  background-color: vars.$mainColorWhite;
+  color: vars.$mikeDarkGrey;
+  height: 500px;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.divers {
+  background-color: trasnparent;
+  color: vars.$mainColorSpecial;
+  height: 350px;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}

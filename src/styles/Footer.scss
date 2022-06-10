@@ -4,6 +4,7 @@
   width: 100%;
   height: 200px;
   background: vars.$mainColor;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,14 +14,19 @@
 }
 
 .socialMedia svg {
-  color: vars.$mainColorSpecial;
+  color: vars.$mikeBackgroundGrey;
   margin: 20px;
   font-size: 70px;
   cursor: pointer;
 }
 
+.socialMedia svg:hover {
+  color: vars.$mainColorSpecial;
+
+}
+
 .footer p {
-  color: vars.$mainColorClear;
+  color: vars.$mikeBackgroundGrey;
 }
 
 @media only screen and (max-width: 600px) {

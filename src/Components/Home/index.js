@@ -13,6 +13,7 @@ import '../../styles/Experience.scss';
 import '../../styles/Projects.scss';
 import '../../styles/ContactV1.scss';
 import '../../styles/Contact.scss';
+import '../../styles/Testimonial.scss';
 import 'react-vertical-timeline-component/style.min.css';
 
 import ProjectItem from '../ProjectItem';
@@ -26,39 +27,47 @@ function Home() {
       <div
         className="about"
       >
-        <h2> Bonjour, je m'appelle Henri</h2>
-        <div className="prompt">
-          <p>
-            Je suis développeur Front-end (React, Redux),
-            mais je suis intérressé par tous les aspects d'un projet. J'ai une formation fullstack.
-          </p>
-          <GitHubIcon />
-          <LinkedInIcon />
-          <EmailIcon />
-          <LocalPhoneIcon />
+        <div className="container">
+          <h2> Bonjour,<br /> je m'appelle <span>Henri</span></h2>
+          <div className="prompt">
+            <p>
+              Je suis un <span>développeur Front-end React</span>,
+              mais je suis intérressé par tous les aspects d'un projet.
+              J'ai une formation fullstack.
+            </p>
+            <GitHubIcon />
+            <LinkedInIcon />
+            <EmailIcon />
+            <LocalPhoneIcon />
+          </div>
+
         </div>
       </div>
       <div className="skills" id="skills">
-        <h1> Skills</h1>
-        <ol className="list">
-          <li className="item">
-            <h2> Front-End</h2>
-            <span>
-              ReactJS, Redux, JavaScript, HTML, CSS, Yarn, Bootstrap, MaterialUI, Framer-Motion
-            </span>
-          </li>
-          <li className="item">
-            <h2> Back-End et Divers</h2>
-            <span>PHP, Python, MySQL, MVC, PDO, GIT, Lumen(Laravel), Apache </span>
-          </li>
-          <li className="item">
-            <h2> Intérressé ou en cours d'apprentissage</h2>
-            <span>
-              React Native, TypeScript, Firebase,
-              Docker, ExpressJS, NodeJS, MongoDB, Angular, VueJS, Symfony, algorithmie
-            </span>
-          </li>
-        </ol>
+        <div className="container">
+          <h1> Skills</h1>
+          <ol className="list">
+            <li className="item">
+              <h2> Front-End</h2>
+              <span>
+                ReactJS, Redux, JavaScript,
+                HTML, CSS, npm, Yarn, Bootstrap, MaterialUI, Framer-Motion
+              </span>
+            </li>
+            <li className="item">
+              <h2> Back-End et Divers</h2>
+              <span>PHP, Python, MySQL, MVC, PDO, GIT, Lumen(Laravel), Apache </span>
+            </li>
+            <li className="item">
+              <h2> Intérressé ou en cours d'apprentissage</h2>
+              <span>
+                React Native, TypeScript, Firebase,
+                Docker, ExpressJS, NodeJS, MongoDB, Angular, VueJS, Symfony, algorithmie
+              </span>
+            </li>
+          </ol>
+
+        </div>
       </div>
       <div className="projects" id="projets">
         <h1 className="projectTitle"> My Personnal Projects</h1>
@@ -170,6 +179,12 @@ function Home() {
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
+      </div>
+      <div className="testimonial">
+        Testimonial
+      </div>
+      <div className="divers">
+        Divers
       </div>
       <ContactForm id="contact" />
       {/* <div className="contactV1">
