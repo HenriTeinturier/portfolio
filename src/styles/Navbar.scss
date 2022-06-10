@@ -8,15 +8,18 @@
   background: vars.$mainColor;
   background: transparent;
 
-  //TODO les 2 lignes a mettre quand scrolly = ?
-  // background: vars.$mikeBackgroundGrey;
-  // box-shadow: 0 3px 20px rgba(black, 0.2);
-
   // to close navMenu animation
   z-index: 1;
   // vitesse de retour à 0 couleur navbar
   transition: all 0.4s;
+}
 
+.navbar.opacity1 {
+  //TODO les 2 lignes a mettre quand scrolly = ?
+  background: vars.$mikeBackgroundGrey;
+  background: vars.$mainColorSpecialBis;
+  box-shadow: 0 3px 20px rgba(black, 0.2);
+  transition: all 0.4s ease-in-out;
 }
 
 .links {
@@ -27,7 +30,6 @@
   justify-content: center;
   // fermeture des links
   transition: all 0.4s;
-
   //TODO là conserver quand transparent?
   padding-top: 0;
 }
@@ -38,6 +40,12 @@
   color: vars.$mainColorClear;
   //TODO la ligne suivante a mettre quand scrolly = ?
   // color: vars.$mikeColorSecondary;
+}
+
+.navbar.opacity1 a {
+  //TODO la ligne suivante a mettre quand scrolly = ?
+  color: vars.$mikeColorSecondary;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar a:hover {
@@ -71,7 +79,7 @@
   // to open navMenu animation
   // position: sticky;
   background-color: vars.$mainColorBis;
-  background-color: vars.$mikeBackgroundGrey;
+  background-color: vars.$mainColorquatro;
   // vitesse change color navbar
   transition: all 0.4s;
   // height: 370px;
@@ -83,7 +91,7 @@
   position: sticky;
   // padding-top: 8px;
   background-color: vars.$mainColorBis;
-  background-color: vars.$mikeBackgroundGrey;
+  background-color: vars.$mainColorquatro;
 
 
   // background-color: vars.$mainBackgroundSecondary;
@@ -126,6 +134,11 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     background: transparent;
+  }
+
+  .navbar.opacity1 {
+    background: transparent;
+    box-shadow: none;
   }
 
   .toggleButton {
