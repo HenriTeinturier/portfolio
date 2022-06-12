@@ -18,7 +18,9 @@
   //TODO les 2 lignes a mettre quand scrolly = ?
   background: vars.$mikeBackgroundGrey;
   background: vars.$mainColorSpecialBis;
-  box-shadow: 0 3px 20px rgba(black, 0.2);
+  background: vars.$mainColorCinco;
+  background-image: linear-gradient(to right top, #181a38, #1a1b3e, #1c1b44, #1f1c4a, #231c50, #291f58, #2f2360, #352668, #3f2e75, #483682, #523e8f, #5c479d);
+  box-shadow: 0 10px 10px rgba(black, 0.2);
   transition: all 0.4s ease-in-out;
 }
 
@@ -44,8 +46,8 @@
 
 .navbar.opacity1 a {
   //TODO la ligne suivante a mettre quand scrolly = ?
-  color: vars.$mikeColorSecondary;
-  transition: all 0.4s ease-in-out;
+  // color: vars.$mikeColorSecondary;
+  // transition: all 0.4s ease-in-out;
 }
 
 .navbar a:hover {
