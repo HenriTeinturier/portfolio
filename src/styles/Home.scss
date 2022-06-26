@@ -26,9 +26,10 @@
 
 }
 
+// titre principal Henri Teinturier
 .about h2 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: calc(20px + 5vmin);
+  font-size: 50px;
   padding: 8px;
   color: vars.$mikeBackgroundGrey;
   // height: 120px;
@@ -36,6 +37,7 @@
   font-weight: bold;
 }
 
+// couleur accentuée sur titre
 .about h2 span {
   color: vars.$mainColorSpecial;
 
@@ -47,12 +49,15 @@
 
 }
 
+// sous titre présentation
 .about p {
   margin-bottom: 2rem;
   color: vars.$mikeBackgroundGrey;
   font-size: 35px;
+  // font-size: 35px;
 }
 
+// sous titre accentuation plus legerement plus grand +5px
 .about p span {
   color: vars.$mainColorSpecial;
   font-weight: bold;
