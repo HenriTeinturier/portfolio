@@ -74,50 +74,9 @@
   color: vars.$mainColorSpecial;
 }
 
-.skills {
-  // font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  // font-weight: bold;
-  // height: calc(100vh - 100px);
-  padding: 160px 0 60px;
-  font-size: 35px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: vars.$mikeBackgroundGrey;
-  // border-bottom: 2px solid vars.$mainBackground;
-}
 
-.skills h1 {
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainColorSpecial;
-  font-size: 50px;
-  font-weight: 800;
-  margin-bottom: 2.5rem;
-}
 
-.skills h2 {
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mikeDarkGrey;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
 
-.skills .list {
-  list-style: none;
-  width: 80%;
-}
-
-.skills .item {
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mikeMediumGrey;
-  margin-bottom: 2rem;
-}
-
-.list span {
-  font-size: 20px;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -131,15 +90,4 @@
     width: 80%;
   }
 
-  // .skills {
-  //   text-align: center;
-  // }
-
-  .list {
-    padding: 0;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-  }
 }

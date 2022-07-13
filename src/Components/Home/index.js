@@ -8,6 +8,7 @@ import WorkIcon from '@mui/icons-material/Work';
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import ContactForm from '../Contact';
+import Skills from '../Skills/Skills';
 import '../../styles/Home.scss';
 import '../../styles/Experience.scss';
 import '../../styles/Projects.scss';
@@ -24,9 +25,7 @@ function Home() {
   const backgroundColorWork = '#ffa500';
   return (
     <div className="home">
-      <div
-        className="about"
-      >
+      <div className="about">
         <div className="container">
           <h2> Bonjour,<br /> je m'appelle <span>Henri</span></h2>
           <div className="prompt">
@@ -43,32 +42,7 @@ function Home() {
 
         </div>
       </div>
-      <div className="skills" id="skills">
-        <div className="container">
-          <h1> Skills</h1>
-          <ol className="list">
-            <li className="item">
-              <h2> Front-End</h2>
-              <span>
-                ReactJS, Redux, JavaScript,
-                HTML, CSS, npm, Yarn, Bootstrap, MaterialUI, Framer-Motion
-              </span>
-            </li>
-            <li className="item">
-              <h2> Back-End et Divers</h2>
-              <span>PHP, Python, MySQL, MVC, PDO, GIT, Lumen(Laravel), Apache </span>
-            </li>
-            <li className="item">
-              <h2> Intérressé ou en cours d'apprentissage</h2>
-              <span>
-                React Native, TypeScript, Firebase,
-                Docker, ExpressJS, NodeJS, MongoDB, Angular, VueJS, Symfony, algorithmie
-              </span>
-            </li>
-          </ol>
-
-        </div>
-      </div>
+      <Skills id="skills" />
       <div className="projects" id="projets">
         <h1 className="projectTitle"> My Personnal Projects</h1>
         <div className="projectList">
@@ -187,51 +161,6 @@ function Home() {
         Divers
       </div>
       <ContactForm id="contact" />
-      {/* <div className="contactV1">
-        <h1 className="contactV1Title"> ContactV1</h1>
-        <section className="contactV1-box">
-          <div className="contactV1-links">
-            <h2>CONTACTV1</h2>
-            <div className="links">
-              <div className="link">
-                <a><LinkedInIcon /></a>
-              </div>
-              <div className="link">
-                <div><GitHubIcon /></div>
-              </div>
-              <div className="link">
-                <a><LocalPhoneIcon /></a>
-              </div>
-              <div className="link">
-                <a><EmailIcon /></a>
-              </div>
-            </div>
-          </div>
-          <div className="contactV1-form-wrapper">
-            <form action="">
-              <div className="form-item">
-                <input type="text" className="form-input" placeholder="Nom:" />
-              </div>
-              <div className="form-item">
-                <input type="text" className="form-input" placeholder="Email:" />
-              </div>
-              <div className="form-item">
-
-                <textarea
-                  className="form-textarea"
-                  placeholder="Message:"
-                />
-              </div>
-              <button
-                className="submit-btn"
-                type="submit"
-              >
-                Envoyer
-              </button>
-            </form>
-          </div>
-        </section>
-      </div> */}
     </div>
   );
 }

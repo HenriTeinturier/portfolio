@@ -6,7 +6,7 @@ function Contact() {
     <div className="contact" id="contact">
       <div
         id="contact__left"
-        className="contact__left lg:grid lg:grid-cols-2 lg:gap-6 bg-blue-300 lg:h-2/3"
+        className="contact__left lg:grid lg:grid-cols-2 lg:gap-6  lg:h-2/3"
       >
         {/* Left part of form */}
         <div
