@@ -12,13 +12,22 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: vars.$mikeBackgroundGrey;
+  // background-color: vars.$mikeBackgroundGrey;
   // border-bottom: 2px solid vars.$mainBackground;
+  // background-image: linear-gradient(rgba(203, 208, 211, 0.74), rgba(227, 231, 234, 0.74)), url("../../public/background/SL_042620_30310_32.jpg");
+  // background-image:  url("../../public/background/SL_042620_30310_36.jpg");
+  background: linear-gradient(90deg, rgba(233,231,238,1) 0%, rgba(211,220,229,1) 100%);
+  background: radial-gradient(circle, rgba(233,231,238,1) 0%, rgba(211,220,229,1) 100%);
+  
+  
+  // background-size: cover;
+  // background-position: center center;
+  // background-repeat: no-repeat;
 }
 
 .skills h1 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mainColorSpecial;
+  color: vars.$mainColorBis;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 2.5rem;
@@ -26,7 +35,7 @@
 
 .skills h2 {
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-  color: vars.$mikeDarkGrey;
+  color: vars.$mikeColorSecondary;
   font-weight: 600;
   // margin-bottom: 1rem;
 }
@@ -46,8 +55,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
   border-bottom: solid 2px lightgrey;
 }
 
@@ -65,6 +74,7 @@
 
   .skills h2 {
     font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -72,6 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {

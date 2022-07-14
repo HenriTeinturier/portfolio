@@ -83,11 +83,38 @@
   // .about h2 {
   //   font-size: 40px;
   // }
+  // titre principal Henri Teinturier
+.about h2 {
+  font-size: 2.5rem;
+  // padding: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-  .about .prompt {
-    margin-top: 10px;
-    font-size: 20px;
-    width: 80%;
-  }
+.about .prompt {
+  margin: 0 auto;
+  margin-top: 0;
+  font-size: 0.5rem;
+  width: 90%;
+
+}
+
+// sous titre présentation
+.about p {
+  margin-bottom: 4rem;
+  color: vars.$mikeBackgroundGrey;
+  font-size: 1.5rem;
+  // font-size: 35px;
+}
+
+// sous titre accentuation plus legerement plus grand +5px
+.about p span {
+  font-size: 2rem;
+}
+
+.prompt svg {
+  font-size: 4rem;
+  margin: 0.3srem;
+}
+
 
 }
