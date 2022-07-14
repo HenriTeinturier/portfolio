@@ -7,6 +7,7 @@ import Error from '../Error';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import ProjectDisplay from '../ProjectDisplay';
+import Cv from '../Cv/Cv';
 
 import '../../styles/Portfolio.scss';
 
@@ -18,6 +19,7 @@ function Portfolio() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<Cv />} />
           {/* <Route path="/projets" element={<Projects />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/projet/:id" element={<ProjectDisplay />} />

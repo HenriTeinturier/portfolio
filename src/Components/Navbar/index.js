@@ -62,6 +62,10 @@ function NavBar() {
         > Experience
         </Link>
         <Link
+          to="/cv"
+        > CV
+        </Link>
+        <Link
           to="/#contact"
         > Contact
         </Link>
