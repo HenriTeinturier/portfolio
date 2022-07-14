@@ -5,6 +5,6 @@ export const ProjectList = [
   {
     name: 'MeetDev',
     image: MeetDev,
-    skills: 'JavaScript,HTML,CSS',
+    skills: 'ReactJs, Redux, React-Router-Dom, Axios, SASS, Framer-Motion, Laravel, JWTToken, API',
   },
 ];
