@@ -14,9 +14,9 @@ function Testimonial() {
   const animationFromBottom = {
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
     },
-    hidden: { opacity: 0, y: '300px' },
+    hidden: { opacity: 0, x: '300px' },
   };
   // control permettra de start ou end l'animation de framer-motion
   const testimonialControl = useAnimation();

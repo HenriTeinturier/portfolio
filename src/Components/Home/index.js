@@ -34,10 +34,28 @@ function Home() {
               mais je suis intérressé par tous les aspects d'un projet.
               J'ai une formation fullstack.
             </p>
-            <GitHubIcon />
-            <LinkedInIcon />
-            <EmailIcon />
-            <LocalPhoneIcon />
+            <a
+              href="https://github.com/HenriTeinturier"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/henri-teinturier/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon />
+            </a>
+            <a href="mailto:henri.teinturier@gmail.com">
+              <EmailIcon />
+            </a>
+            <a
+              href="tel:+0616262394"
+            >
+              <LocalPhoneIcon />
+            </a>
           </div>
 
         </div>

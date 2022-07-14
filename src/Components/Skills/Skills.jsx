@@ -32,12 +32,12 @@ function Skills() {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 1, x: '100vw' },
   };
-  const animationFromBottom = {
+  const animationCards = {
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
     },
-    hidden: { opacity: 0, y: '300px' },
+    hidden: { opacity: 0, x: '300px' },
   };
   // control permettra de start ou end l'animation de framer-motion
   const frontControl = useAnimation();
@@ -97,7 +97,7 @@ function Skills() {
             ReactJS, Redux, JavaScript,
             HTML, CSS, Bootstrap, Framer-Motion, Tailwind
           </motion.span>
-          <motion.div className="cards" variants={animationFromBottom} initial="hidden" animate={frontControl} transition={{ duration: 1, type: 'intetia', delay: 0.8 }}>
+          <motion.div className="cards" variants={animationCards} initial="hidden" animate={frontControl} transition={{ duration: 1, type: 'intetia', delay: 0.8 }}>
             <Card logo={react} background="#61DBFB" label="React" />
             <Card logo={redux} background="#764ABC" label="Redux" />
             <Card logo={javascript} background="#D3B82F" label="JavaScript" />
@@ -109,7 +109,7 @@ function Skills() {
         <li className="item" ref={backRef}>
           <motion.h2 variants={animationFromRight} initial="hidden" animate={backControl} transition={{ duration: 0.8, type: 'intetia', delay: 0.3 }}> Back-End</motion.h2>
           <motion.span variants={animationFromRight} initial="hidden" animate={backControl} transition={{ duration: 0.8, type: 'intetia', delay: 0.3 }}>Symfony, PHP, MySQL, Laravel, Python</motion.span>
-          <motion.div className="cards" variants={animationFromBottom} initial="hidden" animate={backControl} transition={{ duration: 1, type: 'intetia', delay: 0.8 }}>
+          <motion.div className="cards" variants={animationCards} initial="hidden" animate={backControl} transition={{ duration: 1, type: 'intetia', delay: 0.8 }}>
             <Card logo={symfony} background="#1A171B" label="Symfony" />
             <Card logo={laravel} background="#FF3122" label="Laravel" />
             <Card logo={php} background="#787CB4" label="php" />
@@ -123,7 +123,7 @@ function Skills() {
             React Native, Flutter, TypeScript, Docker,
             Firebase, NodeJS, MongoDB, Angular, VueJS, algorithmie
           </motion.span>
-          <motion.div className="cards" variants={animationFromBottom} initial="hidden" animate={interestControl} transition={{ duration: 1, type: 'intetia', delay: 0.8 }}>
+          <motion.div className="cards" variants={animationCards} initial="hidden" animate={interestControl} transition={{ duration: 1, type: 'intetia', delay: 0.8 }}>
             <Card logo={typescript} background="#017ACB" label="TypeScript" />
             <Card logo={docker} background="#2496ED" label="docker" />
             <Card logo={node} background="#88BC5B" label="NodeJs" />
