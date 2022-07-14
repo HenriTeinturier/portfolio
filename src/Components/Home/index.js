@@ -9,12 +9,12 @@ import WorkIcon from '@mui/icons-material/Work';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import ContactForm from '../Contact';
 import Skills from '../Skills/Skills';
+import Testimonial from '../Testimonial/Testimonial';
 import '../../styles/Home.scss';
 import '../../styles/Experience.scss';
 import '../../styles/Projects.scss';
 import '../../styles/ContactV1.scss';
 import '../../styles/Contact.scss';
-import '../../styles/Testimonial.scss';
 import 'react-vertical-timeline-component/style.min.css';
 
 import ProjectItem from '../ProjectItem';
@@ -154,12 +154,10 @@ function Home() {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-      <div className="testimonial">
-        Testimonial
-      </div>
-      <div className="divers">
+      <Testimonial />
+      {/* <div className="divers">
         Divers
-      </div>
+      </div> */}
       <ContactForm id="contact" />
     </div>
   );

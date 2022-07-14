@@ -1,12 +1,61 @@
 @use 'vars';
 
 .testimonial {
-  background-color: vars.$mainColorWhite;
-  color: vars.$mikeDarkGrey;
-  height: 500px;
+  // background-color: vars.$mainColorWhite;
+  
+  background-color: transparent;
+  // color: vars.$mikeDarkGrey;
+  
+
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.testimonial h2 {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
   text-align: center;
-  font-size: 30px;
+  color: vars.$mainColorSpecial;
+  margin-bottom: 2rem;
+  
+}
+
+.testimonial div {
+  background: radial-gradient(circle, rgba(50,50,50,0.4) 0%, rgba(0,0,0,0.4) 100%);
+  padding: 3rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  margin-bottom: 5rem;
+  max-width: 80rem;
+
+  
+}
+
+
+
+.testimonial p {
+  // color: mikeMediumGrey;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial span {
+  color: vars.$orange;
+  // font-size: 1.8rem;
+}
+
+.testimonial .guillemet {
+  color: white;
+  font-size: 5rem;
+  line-height: 1rem;
+  // margin-top: 1rem;
+  padding-top: 2rem;
 }
 
 .divers {
@@ -16,4 +65,39 @@
   padding: 50px;
   text-align: center;
   font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .testimonial {
+    padding: 1rem;   
+  }
+
+  .testimonial h2 {
+    font-size: 3rem;    
+  }
+  .testimonial div {
+    padding: 1rem 1rem;
+  }
+  
+  
+  
+  .testimonial p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial span {
+    color: vars.$orange;
+    // font-size: 1.8rem;
+  }
+  
+  .testimonial .guillemet {
+    font-size: 2rem;
+    line-height: 1rem;
+    // margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+
 }

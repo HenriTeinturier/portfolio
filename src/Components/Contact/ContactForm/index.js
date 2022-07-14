@@ -2,7 +2,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from 'react';
 import InputField from '../InputField';
-import SelectField from '../SelectField';
+// import SelectField from '../SelectField';
 import TextareaField from '../TextareaField';
 
 function ContactForm() {
@@ -43,11 +43,11 @@ function ContactForm() {
         <h3
           className="text-gray-700 mb-7 text-xl font-semibold"
         >
-          Send us message
+          Send me a message
         </h3>
-        <InputField handleChange={handleChange} label="Full Name" name="fullName" type="text" placeholder="John Doe" />
+        <InputField handleChange={handleChange} label="Name" name="fullName" type="text" placeholder="John Doe" />
         <InputField handleChange={handleChange} label="E-Mail" name="email" type="email" placeholder="jdoe@exemple.com" />
-        <SelectField handleChange={handleChange} name="role" label="Role" />
+        {/* <SelectField handleChange={handleChange} name="role" label="Role" /> */}
         <TextareaField handleChange={handleChange} label="Your message here" name="message" />
         <button
           type="submit"

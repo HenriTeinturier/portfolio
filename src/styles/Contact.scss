@@ -6,16 +6,22 @@
 .contact {
   height: calc(100vh - 300px);
   min-height: 875px;
+  
+  
 }
 
 /* 2/3 avec tailwin but max 522px for hight resolution */
 #contact__left {
   max-height: 600px;
   background-color: vars.$mainColorSpecialBis;
+  background: radial-gradient(circle, rgba(227, 218, 251,1) 0%, rgba(207, 208, 231,1) 100%);
+  // background: rgb(227, 218, 251);
+  
 }
 
 #contact__left--contacter {
   color: vars.$mainColorPrincipalEx;
+  max-width: 40rem;
 }
 
 #contact__left--h1 {
